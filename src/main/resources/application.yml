@@ -1,0 +1,36 @@
+server:
+  port: 8085
+
+spring:
+  data:
+    mongodb:
+      database: pruebaDb
+      host: localhost
+      port: 27017
+
+app:
+  database:
+    url: "mongodb://localhost:27017/pruebaDb"
+    database: pruebaDb
+    host: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+  metrics:
+    enable:
+      all: true
+
+info:
+  application:
+    name: "Hacom Service"
+    description: "Microservicio de prueba"
+    version: "1.0.0"
