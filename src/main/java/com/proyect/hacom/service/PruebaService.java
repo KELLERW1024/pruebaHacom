@@ -30,7 +30,7 @@ public class PruebaService {
 
     public Flux<TraceMsgDto>  findRangoFechas(DateRangeRequest dateRangeRequest){
         logger.info("[PruebaService] [findRangoFechas]");
-        // Verifaciacion de los datos del YAML mediante @ConfigurationProperties
+        // Verificacion de los datos del YAML mediante @ConfigurationProperties
         logger.info("URI:{}" , appConfig.getDatabase().getUrl());
         logger.info("DataBase:{}" , appConfig.getDatabase().getDatabase());
         logger.info("HOST:{}" , appConfig.getDatabase().getHost());
